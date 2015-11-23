@@ -1,6 +1,6 @@
-FROM axags/java-openshift
+FROM vbehar/java-openshift
 
-MAINTAINER https://github.com/AXA-GROUP-SOLUTIONS/sbt-openshift-docker-image
+MAINTAINER https://github.com/vbehar/sbt-openshift-docker-image
 
 # SBT Version
 ENV SBT_VERSION=0.13.9 \

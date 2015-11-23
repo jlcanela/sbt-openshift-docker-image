@@ -3,7 +3,7 @@ machine:
     - docker
 dependencies:
   override:
-    - docker build -t axags/sbt-openshift .
+    - docker build -t vbehar/sbt-openshift .
 test:
   override:
-    - docker run -it axags/sbt-openshift sbt about
+    - docker run -it vbehar/sbt-openshift sbt about

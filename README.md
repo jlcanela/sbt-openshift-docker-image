@@ -1,19 +1,19 @@
 # SBT OpenShift Docker Image
 
-[![Circle CI](https://circleci.com/gh/AXA-GROUP-SOLUTIONS/sbt-openshift-docker-image/tree/0.13.9.svg?style=shield)](https://circleci.com/gh/AXA-GROUP-SOLUTIONS/sbt-openshift-docker-image/tree/0.13.9)
-[![DockerHub](https://img.shields.io/badge/docker-axags%2Fsbt--openshift-008bb8.svg)](https://hub.docker.com/r/axags/sbt-openshift/)
-[![Image Layers](https://badge.imagelayers.io/axags/sbt-openshift:0.13.9.svg)](https://imagelayers.io/?images=axags/sbt-openshift:0.13.9)
+[![Circle CI](https://circleci.com/gh/vbehar/sbt-openshift-docker-image/tree/0.13.9.svg?style=shield)](https://circleci.com/gh/vbehar/sbt-openshift-docker-image/tree/0.13.9)
+[![DockerHub](https://img.shields.io/badge/docker-vbehar%2Fsbt--openshift-008bb8.svg)](https://hub.docker.com/r/vbehar/sbt-openshift/)
+[![Image Layers](https://badge.imagelayers.io/vbehar/sbt-openshift:0.13.9.svg)](https://imagelayers.io/?images=vbehar/sbt-openshift:0.13.9)
 
-`axags/sbt-openshift` is a base Docker image that should be used to run SBT-based applications in an OpenShift environment.
+`vbehar/sbt-openshift` is a base Docker image that should be used to run SBT-based applications in an OpenShift environment.
 
-This image use the [axags/java-openshift](https://hub.docker.com/r/axags/java-openshift/) base-image, and installs [SBT](http://www.scala-sbt.org/) on top of it (not only the SBT launcher, but also all the SBT libs).
+This image use the [vbehar/java-openshift](https://hub.docker.com/r/vbehar/java-openshift/) base-image, and installs [SBT](http://www.scala-sbt.org/) on top of it (not only the SBT launcher, but also all the SBT libs).
 
 ## Using it
 
 Here is a sample `Dockerfile` that can be used to build a "fat" JAR file with SBT, and then run it with Java:
 
 ```
-FROM axags/sbt-openshift:0.13.9
+FROM vbehar/sbt-openshift:0.13.9
 
 ENV MYAPP_HOME /opt/myapp
 

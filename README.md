@@ -1,8 +1,8 @@
 # SBT OpenShift Docker Image
 
-[![Circle CI](https://circleci.com/gh/AXA-GROUP-SOLUTIONS/sbt-openshift-docker-image/tree/master.svg?style=shield)](https://circleci.com/gh/AXA-GROUP-SOLUTIONS/sbt-openshift-docker-image/tree/master)
+[![Circle CI](https://circleci.com/gh/AXA-GROUP-SOLUTIONS/sbt-openshift-docker-image/tree/0.13.9.svg?style=shield)](https://circleci.com/gh/AXA-GROUP-SOLUTIONS/sbt-openshift-docker-image/tree/0.13.9)
 [![DockerHub](https://img.shields.io/badge/docker-axags%2Fsbt--openshift-008bb8.svg)](https://hub.docker.com/r/axags/sbt-openshift/)
-[![Image Layers](https://badge.imagelayers.io/axags/sbt-openshift:latest.svg)](https://imagelayers.io/?images=axags/sbt-openshift:latest)
+[![Image Layers](https://badge.imagelayers.io/axags/sbt-openshift:0.13.9.svg)](https://imagelayers.io/?images=axags/sbt-openshift:0.13.9)
 
 `axags/sbt-openshift` is a base Docker image that should be used to run SBT-based applications in an OpenShift environment.
 
@@ -13,7 +13,7 @@ This image use the [axags/java-openshift](https://hub.docker.com/r/axags/java-op
 Here is a sample `Dockerfile` that can be used to build a "fat" JAR file with SBT, and then run it with Java:
 
 ```
-FROM axags/sbt-openshift
+FROM axags/sbt-openshift:0.13.9
 
 ENV MYAPP_HOME /opt/myapp
 

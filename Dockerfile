@@ -15,6 +15,7 @@ RUN curl -jksSL https://dl.bintray.com/sbt/native-packages/sbt/${SBT_VERSION}/sb
 COPY sbtopts ${SBT_HOME}/conf/sbtopts
 
 # Force the SBT launcher to retrieve all the SBT libs
-RUN [ "sbt", "eval 1+1" ]
+RUN sbt "eval 1+1" \
+ && rm -rf project
 
 VOLUME [ "/var/sbt", "/var/ivy2" ]
